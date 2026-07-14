@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>感染性葡萄膜炎分类工程演示</title>
+    <link rel="stylesheet" href="/static/styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div>
+        <p class="eyebrow">项目结项工程交付版</p>
+        <h1>感染性葡萄膜炎分类系统</h1>
+      </div>
+      <div class="status-pill">运行链路已验证</div>
+    </header>
+
+    <main class="layout">
+      <section class="hero-band">
+        <div class="hero-copy">
+          <h2>眼底图像 + 可选血常规的本地推理</h2>
+          <p>上传眼底图像即可运行；填写支持的血常规后自动启用图像与血常规联合分支。</p>
+        </div>
+        <div class="dataset-strip">
+          <div><span class="metric-value" data-meta="version">-</span><span class="metric-label">模型版本</span></div>
+          <div><span class="metric-value" data-meta="status">-</span><span class="metric-label">功能测试</span></div>
+          <div><span class="metric-value" data-meta="inputs">-</span><span class="metric-label">支持输入</span></div>
+          <div><span class="metric-value" data-meta="date">-</span><span class="metric-label">验证日期</span></div>
+        </div>
+      </section>
+
+      <section class="workspace">
+        <div class="panel inference-panel">
+          <div class="panel-header">
+            <h2>单病例推理</h2>
+            <span class="panel-note">上传 1–4 张图像</span>
+          </div>
+          <form id="predictForm">
+            <label class="upload-box" for="images">
+              <input id="images" name="images" type="file" accept="image/*" multiple required />
+              <span class="upload-title">选择眼底图像</span>
+              <span class="upload-subtitle">支持 JPG / PNG，最多 4 张</span>
+            </label>
+            <div id="previewGrid" class="preview-grid"></div>
+
+            <label class="field-label" for="labText">血常规文本，可选</label>
+            <textarea id="labText" name="lab_text" rows="5" placeholder="例如：WBC 5.06；NEUT% 60.4；LYMPH# 1.61；HGB 135；PLT 282"></textarea>
+
+            <div class="form-row">
+              <label class="field-label compact" for="thresholdPreset">阈值模式</label>
+              <select id="thresholdPreset" name="threshold_preset">
+                <option value="selected">默认阈值</option>
+                <option value="balanced">均衡阈值</option>
+                <option value="high_sensitivity">高敏感性</option>
+                <option value="high_specificity">高特异性</option>
+              </select>
+              <button type="submit" id="submitButton">开始判断</button>
+            </div>
+          </form>
+        </div>
+
+        <div class="panel result-panel">
+          <div class="panel-header">
+            <h2>推理结果</h2>
+            <span id="branchBadge" class="branch-badge">等待输入</span>
+          </div>
+          <div id="resultEmpty" class="empty-state">上传图像后显示感染性分数和分类结果。</div>
+          <div id="resultBody" class="result-body hidden">
+            <div class="prediction-line">
+              <span id="predictionText">-</span>
+              <strong id="probabilityText">-</strong>
+            </div>
+            <div class="risk-meter"><div id="riskFill"></div></div>
+            <dl class="result-grid">
+              <div><dt>实际分支</dt><dd id="branchText">-</dd></div>
+              <div><dt>使用血常规</dt><dd id="usesLabsText">-</dd></div>
+              <div><dt>识别血常规</dt><dd id="labCountText">-</dd></div>
+              <div><dt>图像数量</dt><dd id="imageCountText">-</dd></div>
+              <div><dt>判定阈值</dt><dd id="thresholdText">-</dd></div>
+              <div><dt>边界距离</dt><dd id="marginText">-</dd></div>
+            </dl>
+            <div id="warningBox" class="warning-box hidden"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="panel metrics-panel">
+        <div class="panel-header">
+          <h2>主模型内部验收摘要</h2>
+          <span class="panel-note">149 例内部工程测试</span>
+        </div>
+        <div class="dataset-strip">
+          <div><span class="metric-value" data-metric="balanced_accuracy">-</span><span class="metric-label">均衡准确率</span></div>
+          <div><span class="metric-value" data-metric="infectious_recall">-</span><span class="metric-label">感染类召回率</span></div>
+          <div><span class="metric-value" data-metric="specificity">-</span><span class="metric-label">特异性</span></div>
+          <div><span class="metric-value">图像 + 血常规</span><span class="metric-label">主推理分支</span></div>
+        </div>
+      </section>
+
+      <footer>本系统用于项目演示和辅助分类，不作为独立临床诊断依据。</footer>
+    </main>
+
+    <script src="/static/app.js"></script>
+  </body>
+</html>
+

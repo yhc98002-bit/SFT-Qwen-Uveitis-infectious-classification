@@ -1,0 +1,51 @@
+{
+  "model_name": "uveitis-infectious-late-fusion",
+  "version": "1.0.0",
+  "release_status": "engineering_delivery",
+  "functional_status": "passed_on_guangxi",
+  "validated_on": "2026-07-14",
+  "artifact": {
+    "path": "artifacts/late_fusion_model.joblib",
+    "sha256": "08561261448e03b559e3682a2fb436626072cfd226771f515dbae2d1eee26d44"
+  },
+  "labels": {
+    "positive": "感染性葡萄膜炎",
+    "negative": "非感染性葡萄膜炎"
+  },
+  "inputs": {
+    "image_count": "1-4",
+    "recommended_image_count": 4,
+    "supported_blood_routine_fields": 23,
+    "recommended_minimum_recognized_fields": 5
+  },
+  "branches": {
+    "full": {
+      "display_name": "图像 + 血常规",
+      "feature_groups": ["labs", "image_embedding"],
+      "threshold": 0.5
+    },
+    "image_only": {
+      "display_name": "仅图像",
+      "feature_groups": ["image_embedding"],
+      "threshold": 0.4240163775761021
+    }
+  },
+  "internal_acceptance_snapshot": {
+    "records": 149,
+    "primary_branch": "full",
+    "balanced_accuracy": 0.7952317290552584,
+    "infectious_recall": 0.7647058823529411,
+    "specificity": 0.8257575757575758,
+    "note": "项目内部验收摘要，仅用于工程交付展示。"
+  },
+  "validated_runtime": {
+    "python": "3.10",
+    "joblib": "1.5.3",
+    "pillow": "12.2.0",
+    "scikit_learn": "1.7.2",
+    "torch": "2.11.0+cu130",
+    "torchvision": "0.26.0+cu130"
+  },
+  "disclaimer": "本系统用于项目演示和辅助分类，不作为独立临床诊断依据。"
+}
+

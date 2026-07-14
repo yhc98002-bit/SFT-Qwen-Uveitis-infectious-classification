@@ -1,0 +1,4 @@
+{"id":"external_case_001_full_structured","images":["case_001/image1.jpg","case_001/image2.jpg","case_001/image3.jpg","case_001/image4.jpg"],"sex":"男","age":54,"chief_complaint":"右眼胀痛伴同侧头痛3天","labs":{"WBC":5.34,"NEUT%":"73.3%","LYMPH#":"1.20","Hb":135,"PLT":190},"label":"感染性葡萄膜炎"}
+{"id":"external_case_002_prompt_file","images":["case_002/image1.jpg","case_002/image2.jpg","case_002/image3.jpg","case_002/image4.jpg"],"sex":"女","age":42,"chief_complaint":"左眼红痛视物模糊1周","prompt_file":"external_case_002_blood_routine.txt","label":"非感染性葡萄膜炎"}
+{"id":"external_case_003_labs_json_file","images":["case_003/image1.jpg","case_003/image2.jpg","case_003/image3.jpg","case_003/image4.jpg"],"sex":"男","age":61,"chief_complaint":"双眼视物模糊伴畏光2周","labs_json_file":"external_case_003_labs.json","label":"感染性葡萄膜炎"}
+{"id":"external_case_004_image_only","images":["case_004/image1.jpg","case_004/image2.jpg","case_004/image3.jpg","case_004/image4.jpg"],"label":"非感染性葡萄膜炎"}

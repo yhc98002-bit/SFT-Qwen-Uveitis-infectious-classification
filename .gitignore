@@ -1,0 +1,24 @@
+__pycache__/
+*.py[cod]
+*.log
+.pytest_cache/
+.venv/
+venv/
+build/
+dist/
+tmp/
+test-output/
+external-output/
+.idea/
+.vscode/
+.DS_Store
+
+# Patient data and generated datasets must never be committed.
+data/
+*.xlsx
+*.xls
+*.zip
+*.dcm
+*.nii
+*.nii.gz
+

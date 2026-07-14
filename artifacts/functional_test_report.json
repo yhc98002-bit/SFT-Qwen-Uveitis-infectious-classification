@@ -1,0 +1,22 @@
+{
+  "ok": true,
+  "tested_on": "2026-07-14",
+  "environment": "GuangXi / Python 3.10 / CPU smoke",
+  "model_version": "1.0.0",
+  "model_sha256": "08561261448e03b559e3682a2fb436626072cfd226771f515dbae2d1eee26d44",
+  "checks": {
+    "model_bundle": "passed",
+    "mobilenet_v3_large_backbone": "passed",
+    "full_branch": "passed",
+    "image_only_branch": "passed",
+    "web_root": 200,
+    "web_showcase_api": 200,
+    "web_predict_api": 200,
+    "web_predict_images": 4,
+    "web_predict_recognized_labs": 5,
+    "jsonl_preflight": "passed",
+    "jsonl_batch_branches": ["full", "image_only"]
+  },
+  "test_data": "Program-generated synthetic images and synthetic blood-routine values only."
+}
+

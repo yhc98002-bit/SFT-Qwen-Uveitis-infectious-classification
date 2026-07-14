@@ -1,0 +1,138 @@
+{
+  "format_version": 1,
+  "generated_at_utc": "2026-07-14T04:41:06.477165+00:00",
+  "file_count": 26,
+  "total_bytes": 491028,
+  "files": [
+    {
+      "path": ".gitattributes",
+      "size_bytes": 36,
+      "sha256": "41358a025b315d21cda25c05685336d9145e00910ca15bffe9d971145196e5dc"
+    },
+    {
+      "path": ".gitignore",
+      "size_bytes": 242,
+      "sha256": "bc367bffa0ebebbb3861d1a3e288f3e6d6c5e0a4f4552ee0a366801f0834ad4d"
+    },
+    {
+      "path": "README.md",
+      "size_bytes": 3787,
+      "sha256": "2889e23988bf2140fb81e91e20786427ab46705828bb8018b3726904e02d551c"
+    },
+    {
+      "path": "artifacts/functional_test_report.json",
+      "size_bytes": 696,
+      "sha256": "246878874176a5351e55dfc0a412c735998c4afec210931905909ea742d30d5b"
+    },
+    {
+      "path": "artifacts/late_fusion_model.joblib",
+      "size_bytes": 336961,
+      "sha256": "08561261448e03b559e3682a2fb436626072cfd226771f515dbae2d1eee26d44"
+    },
+    {
+      "path": "artifacts/model_metadata.json",
+      "size_bytes": 1509,
+      "sha256": "e032033a6e1329c4993c040b478bd113011835b47437667e896ac7ccf0063804"
+    },
+    {
+      "path": "demo/__init__.py",
+      "size_bytes": 68,
+      "sha256": "9d088091d71e57a0ef233ca8b459942bc556f76cf2215a4b4d7f5fa618a22ab6"
+    },
+    {
+      "path": "demo/app.py",
+      "size_bytes": 8253,
+      "sha256": "2eb8579fc373fd9998b33d2513e4ed8af41d23ee3a1ed0304e132749f470e103"
+    },
+    {
+      "path": "demo/static/app.js",
+      "size_bytes": 4431,
+      "sha256": "e525d0915e77cb916b47ce17c3ebb6be87cb0c69bcdd211977deb4765db3e10c"
+    },
+    {
+      "path": "demo/static/styles.css",
+      "size_bytes": 6817,
+      "sha256": "e74e25b2674b71a4abce0336c5e9721c42f8671f5c42f059ac8b3261eb8e6581"
+    },
+    {
+      "path": "demo/templates/index.html",
+      "size_bytes": 5100,
+      "sha256": "c513e87bc631d7d4bbc23f108a4cb96aa44f69e944f5a512e6e9d9c61475debc"
+    },
+    {
+      "path": "evaluate_final_external_jsonl.py",
+      "size_bytes": 14764,
+      "sha256": "f2b3f33236d2ac72dea7b21c69bfdacc41c155a72cf86fca96f96f8942180c65"
+    },
+    {
+      "path": "examples/external_case_002_blood_routine.txt",
+      "size_bytes": 258,
+      "sha256": "3ceb8bdb72ac9c7da3da2366bad80b954f5ca454aaa8d331685e90f3515f90d7"
+    },
+    {
+      "path": "examples/external_case_003_labs.json",
+      "size_bytes": 103,
+      "sha256": "1fa479f646b21c1cca4aa9ea63d1c6aeb3238f54eb86cc2409104591e17c127b"
+    },
+    {
+      "path": "examples/external_cases.example.jsonl",
+      "size_bytes": 1078,
+      "sha256": "982825aeddb3c37dc8db1ad5cdc75e77f9e7b92f971e8db1d0520a63997530b2"
+    },
+    {
+      "path": "infer_final_uveitis.py",
+      "size_bytes": 21283,
+      "sha256": "3c090b4f3865f877b1596a1f3f93a96398b5d352d17aed7982f9bba6cd743b21"
+    },
+    {
+      "path": "late_fusion_inference.py",
+      "size_bytes": 15799,
+      "sha256": "b079da44e9bb3680083d0cab5482d2abec55a0dd73be4b12b6cd265f046f8ae6"
+    },
+    {
+      "path": "requirements.txt",
+      "size_bytes": 211,
+      "sha256": "bca949c80f87745186f4c8725f6ef6c4efe585931b66580fc59347025b010a2b"
+    },
+    {
+      "path": "tests/smoke_delivery.py",
+      "size_bytes": 9205,
+      "sha256": "0c64a5ab33b205d764d0f093dece55f17732f4b27e285ac05a09331d2d426d3a"
+    },
+    {
+      "path": "tools/build_delivery_manifest.py",
+      "size_bytes": 2225,
+      "sha256": "6e370cb6dc7cafd3692a096cfae644e0b7a3550fb663810b62fc7983866057a1"
+    },
+    {
+      "path": "tools/verify_delivery.py",
+      "size_bytes": 4551,
+      "sha256": "685fd85e0ba5f4017911a19bd400efb04b99291a233b207bfa4a01e0d677bac4"
+    },
+    {
+      "path": "uveitis_case.py",
+      "size_bytes": 12306,
+      "sha256": "d4ec3e3b80192130506c79f1cf8f2622aa85f87f7a0b4439db445ccbdcf414ad"
+    },
+    {
+      "path": "uveitis_image_inputs.py",
+      "size_bytes": 2513,
+      "sha256": "1255288ef338911a079d2dfeca787589e4fa1eafd304d67d2cdf06317070f9a7"
+    },
+    {
+      "path": "uveitis_metrics.py",
+      "size_bytes": 9050,
+      "sha256": "1ed15e2a11c3242c33eaabfd648b559b4f0ca049bc3f4e730b16e8c29562fe53"
+    },
+    {
+      "path": "uveitis_record_inputs.py",
+      "size_bytes": 9263,
+      "sha256": "53704a2d7fd62b34d43a4dcbaeb83b9b8a7af0c6d8201f8b17cac3a1a9a3b647"
+    },
+    {
+      "path": "validate_external_cases_jsonl.py",
+      "size_bytes": 20519,
+      "sha256": "95bf988563c49d416a577df79ee173a32551bc3da8c9efbb4be61ddd812663fa"
+    }
+  ]
+}
