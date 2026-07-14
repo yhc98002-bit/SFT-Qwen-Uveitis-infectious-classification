@@ -1,8 +1,8 @@
 {
   "format_version": 1,
-  "generated_at_utc": "2026-07-14T04:41:06.477165+00:00",
+  "generated_at_utc": "2026-07-14T05:26:44.578396+00:00",
   "file_count": 26,
-  "total_bytes": 491028,
+  "total_bytes": 492082,
   "files": [
     {
       "path": ".gitattributes",
@@ -16,8 +16,8 @@
     },
     {
       "path": "README.md",
-      "size_bytes": 3787,
-      "sha256": "2889e23988bf2140fb81e91e20786427ab46705828bb8018b3726904e02d551c"
+      "size_bytes": 4841,
+      "sha256": "429c3a30d48951990f10fa7b574b5927819ab26b4a48d3e81e35b27272079289"
     },
     {
       "path": "artifacts/functional_test_report.json",
